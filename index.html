@@ -28,6 +28,7 @@
         .button-container {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
         }
 
         .tile-button {
@@ -42,10 +43,17 @@
             font-weight: bold;
             border-radius: 8px;
             transition: background-color 0.3s;
+            margin: 10px;
         }
 
         .tile-button:hover {
             background-color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            .tile-button {
+                width: 100%;
+            }
         }
     </style>
 </head>
