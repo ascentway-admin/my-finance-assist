@@ -1,5 +1,7 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         table {
             width: 100%;
@@ -14,13 +16,36 @@
             background-color: navy;
             color: white;
             font-weight: bold;
-
         }
 
         .td-right {
             text-align: right;
         }
 
+        @media screen and (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+                thead tr {
+                    display: none;
+                }
+
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+                text-align: left;
+            }
+
+                td::before {
+                    content: attr(data-label);
+                    position: absolute;
+                    left: 10px;
+                    white-space: nowrap;
+                    font-weight: bold;
+                }
+        }
     </style>
 </head>
 <body>
@@ -37,9 +62,9 @@
                 <td class="header">Change %</td>
             </tr>
         </thead>
-         <tr> <td>Nippon India Growth Fund - Direct Plan - Growth</td> <td>04:23:54 PM</td> <td class='td-right'>4184.258</td> <td class='td-right'>0.81</td> <td class='td-right'>4173.3431</td> <td class='td-right' style='background-color: lightcoral'>-0.26</td> </tr>  <tr> <td>Quant Mid Cap Fund - Direct Plan - GrowthMid Cap Fund</td> <td>04:23:04 PM</td> <td class='td-right'>270.0778</td> <td class='td-right'>0.62</td> <td class='td-right'>269.7480</td> <td class='td-right' style='background-color: lightcoral'>-0.12</td> </tr>  <tr> <td>ICICI Prudential Large & Mid Cap Fund- Direct Plan - GrowthLarge & Mid Cap Fund</td> <td>04:23:30 PM</td> <td class='td-right'>1014.93</td> <td class='td-right'>0.85</td> <td class='td-right'>1017.1969</td> <td class='td-right' style='background-color: lightgreen'>0.22</td> </tr> 
+         <tr> <td>Nippon India Growth Fund - Direct Plan - Growth</td> <td>04:32:16 PM</td> <td class='td-right'>4184.258</td> <td class='td-right'>0.81</td> <td class='td-right'>4173.3431</td> <td class='td-right' style='background-color: lightcoral'>-0.26</td> </tr>  <tr> <td>Quant Mid Cap Fund - Direct Plan - GrowthMid Cap Fund</td> <td>04:31:02 PM</td> <td class='td-right'>270.0778</td> <td class='td-right'>0.62</td> <td class='td-right'>269.7480</td> <td class='td-right' style='background-color: lightcoral'>-0.12</td> </tr>  <tr> <td>ICICI Prudential Large & Mid Cap Fund- Direct Plan - GrowthLarge & Mid Cap Fund</td> <td>04:31:44 PM</td> <td class='td-right'>1014.93</td> <td class='td-right'>0.85</td> <td class='td-right'>1017.1969</td> <td class='td-right' style='background-color: lightgreen'>0.22</td> </tr> 
     </table>
     <br /><br />
-    Updated from USER@RANJANHP on 26-Jun-2024 16:23:55
+    Updated from USER@RANJANHP on 26-Jun-2024 16:32:17
 </body>
 </html>
