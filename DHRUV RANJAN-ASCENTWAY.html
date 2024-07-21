@@ -1,0 +1,117 @@
+<html>
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <style>
+
+        body {
+            margin: 0px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 0px 5px;
+        }
+
+        tr {
+            height: 25px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .heading {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+
+        .overflow-anywhere {
+            overflow-wrap: anywhere;
+        }
+
+        .table-header {
+            background-color: #007BFF;
+            color: white;
+            font-weight: bold;
+        }
+
+        .source-table-header {
+            background-color: #007BFF;
+            color: white;
+            font-weight: bold;
+        }
+
+        .source-table-header-value {
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+        }
+
+        .td-right {
+            text-align: right;
+        }
+
+        .home-button {
+            background-color: #007BFF;
+            color: white;
+            margin-right: auto;
+            height: 30px;
+            position: absolute;
+            border-radius: 10px;
+            width: 80px;
+            font-weight: bold;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location.href='~/../';" class="home-button">Home</button>
+        <h2 class="heading">Mutual Fund NAV Estimator</h2>
+    </div>
+    <hr style="margin: 0px -20px;" />
+    <br />
+    <table style="width:auto">
+        <tr>
+            <td align="right" class="source-table-header">Source</td>
+            <td align="left" class="source-table-header-value">DHRUV RANJAN@ASCENTWAY</td>
+        </tr>
+        <tr>
+            <td align="right" class="source-table-header">Update Time</td>
+            <td align="left" class="source-table-header-value">21-Jul-2024 05:07:26 PM</td>
+        </tr>
+    </table>
+    <br />
+    <table>
+        <thead>
+            <tr>
+                <td class="table-header overflow-anywhere">Name</td>
+                <td class="table-header">Time</td>
+                <td class="table-header">Current NAV</td>
+                <td class="table-header">Expense Ratio</td>
+                <td class="table-header">Expected NAV</td>
+                <td class="table-header">Change %</td>
+            </tr>
+        </thead>
+         <tr> <td>HDFC Mid-Cap Opportunities Fund - Direct Plan - Growth</td> <td>05:07:26 PM</td> <td class='td-right'>198.778</td> <td class='td-right'>0.74</td> <td class='td-right'>194.8572</td> <td class='td-right' style='background-color: lightcoral'>-1.97</td> </tr> 
+    </table>
+    <br />
+    <div><b>Message: </b></div>
+    
+    <br /><br />
+    <div><b>Diagnostic Data: </b></div>
+    Agent : MyFinanceAssist v4.0.3
+</body>
+</html>
